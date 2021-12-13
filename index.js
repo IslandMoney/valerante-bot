@@ -15,6 +15,6 @@ client.login(process.env.BOT_TOKEN);
 
 client.on("messageCreate", msg => {
     if (msg.content.toLowerCase().trim() === "valerante") {
-        msg.reply(lines[array[Math.floor(Math.random() * array.length)]])
+        msg.reply(lines[array[Math.floor(Math.random() * lines.length)]])
     }
 })
