@@ -15,6 +15,13 @@ client.login(process.env.BOT_TOKEN);
 
 client.on("messageCreate", msg => {
     if (msg.content.toLowerCase().trim() === "valerante") {
-        msg.reply(lines[array[Math.floor(Math.random() * lines.length)]])
+        msg.reply(lines[0])
+    } else if (msg.content.toLowerCase().trim() === "ceo") {
+        msg.reply(lines[1])
+    } else if (msg.content.toLowerCase().trim() === "volvo") {
+        msg.reply(lines[2])
+    } else if (msg.content.toLowerCase().trim() === "pro") {
+        msg.reply(lines[3])
     }
+
 })
