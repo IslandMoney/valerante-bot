@@ -2,7 +2,7 @@ require('dotenv').config()
 
 const { Client, Intents } = require('discord.js');
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] }); 
 
 const lines = [
     "valarante child game.... look to cartoon grapfix to make kid player happy like children show.. valarante cartoon world with rainbow unlike counter strike with dark corridorr and raelistic gun.. valarante like playhouse. valarant playor run from csgo fear of dark world and realism so need child game to relax",
@@ -23,5 +23,4 @@ client.on("messageCreate", msg => {
     } else if (msg.content.toLowerCase().trim() === "pro") {
         msg.reply(lines[3])
     }
-
 })
